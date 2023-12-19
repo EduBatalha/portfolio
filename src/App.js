@@ -22,6 +22,7 @@ function App() {
       <Projects />
       <div className='line'></div>
       <Skills />
+      <div className='line'></div>
       <Education />
       <div className='line'></div>
       <Experience />
