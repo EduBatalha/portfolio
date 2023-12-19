@@ -1,0 +1,24 @@
+/* styles/Header.scss */
+@import 'variables';
+
+#home {
+    margin-top: 2%;
+
+  }
+  
+  .header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    > * {
+        /* Estilos para todos os elementos dentro de .header */
+        margin: 1vw; /* Remover margens padrão */
+    }
+  }
+
+
+  header {
+    text-align: left;
+  }
+  
+ 

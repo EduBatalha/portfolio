@@ -1,0 +1,41 @@
+/* styles/Projects.scss */
+@import 'variables';
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+#projetos {
+  text-align: left;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+
+  .slick-slider {
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: visible; 
+  }
+
+  .projeto-card {
+    color: $cor-secundaria;
+    border-radius: 16px;
+
+
+    h3 {
+      font-size: 3vw;
+    }
+
+    p {
+      font-size: 2vw;
+    }
+
+    a {
+      color: $cor-secundaria;
+      font-size: 2vw;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  /* Adicione mais estilos conforme necessário */
+}
