@@ -29,6 +29,16 @@
     justify-content: center;
     align-items: center;
     margin: 0;
+    margin-top: 5.5%;
+  }
+
+  img{
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Exemplo de uma função de temporização personalizada usando cubic-bezier */
+  }
+  
+  img:hover{
+    scale: 1.2;
+    
   }
 }
 

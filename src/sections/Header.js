@@ -17,7 +17,7 @@ function Header() {
               <div className="grid">
               
                 <div className="item">
-                  <img src='https://i.pinimg.com/564x/1a/bb/e9/1abbe9b61eac9e87c845c4f2e1ea1356.jpg' alt='Imagem 1'></img>
+                  <img src='https://i.pinimg.com/originals/1a/bb/e9/1abbe9b61eac9e87c845c4f2e1ea1356.gif' alt='Imagem 1'></img>
                 </div>
                 <div className="item" style={{ gridRow: 'span 2' }}>
                   <img src='https://66.media.tumblr.com/43ff1ae84968ffd84606207e9995a78e/tumblr_py4mvbGe6h1tgo74ho1_1280.gif' alt='Imagem 3' />

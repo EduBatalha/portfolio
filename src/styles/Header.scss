@@ -32,10 +32,22 @@
     grid-template-rows: 2fr 1fr;
     grid-template-columns: repeat(2, 1fr); 
     gap: 1%; 
-    margin-top: 5%;
+    margin-top: 7%;
     margin-left: 3%;
     width: 40vw;
     height: 25vw;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border: solid 1px $cor-secundaria;
+      object-fit: cover;
+    }
+
+    img:hover{
+      scale: 1.1;
+      box-shadow: 4px 4px 8px $cor-secundaria;
+    }
   }
   
   .item {
@@ -48,10 +60,4 @@
   }
   
   /* Ajustes para as imagens ocuparem toda a altura do contêiner */
-  img {
-    width: 100%;
-    height: 100%;
-    border: solid 1px $cor-secundaria;
-
-    object-fit: cover;
-  }
+  
