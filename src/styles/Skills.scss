@@ -11,15 +11,10 @@
     text-align: left;
   }
 
-  p{
-
-    font-size: 1.5vw;
-  }
-  
   .img-skill {
     width: 10vw; /* Ajusta o tamanho da imagem para ocupar toda a largura do contêiner */
     height: auto;
-    
+    min-width: 40px;
   }
 
   .skill{

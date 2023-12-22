@@ -1,0 +1,19 @@
+/* styles/Experiences.scss */
+@import 'variables';
+
+#experiencia{
+    a{
+        color: $cor-secundaria;
+        font-size: clamp(12px, 2.2vw, 2.2vw ) ;
+    }
+
+    
+    .cargo{
+        color: $cor-secundaria;
+        font-size: clamp(10px, 1.8vw, 1.8vw);
+    }
+
+    p{
+        font-size: clamp(10px, 1.5vw, 1.5vw);
+    }
+}   
