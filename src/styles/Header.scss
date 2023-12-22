@@ -21,5 +21,37 @@
   header {
     text-align: left;
   }
+
+  .tela1{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1%; 
+    margin-top: 5%;
+    margin-left: 3%;
+    width: 40vw;
+    height: 25vw;
+  }
   
- 
+  .item {
+    height: 100%; /* Cada item ocupa 100% da altura disponível */
+  }
+
+  .grid.second-child{
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  /* Ajustes para as imagens ocuparem toda a altura do contêiner */
+  img {
+    width: 100%;
+    height: 100%;
+    border: solid 1px $cor-secundaria;
+
+    object-fit: cover;
+  }
