@@ -27,17 +27,52 @@ function Projects() {
         link: '#',
       },
       {
-        title: 'Em andamento...',
+        title: 'Em andamento..',
         description: 'Logo terei novos projetos para expor.',
       },
   ];
 
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 1.8, // Defina o número de cartões a serem exibidos ao mesmo tempo
+    slidesToShow: 2.8, // Defina o número de cartões a serem exibidos ao mesmo tempo
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    centerMode: true,
+    centerPadding: 10,
+    mobileFirst: true,
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            dots: true,
+            speed: 500,
+            slidesToShow: 2.8, 
+            slidesToScroll: 1,
+            centerMode: true,
+            
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerMode: true,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1.4,
+            slidesToScroll: 1,
+            centerMode: true,
+          }
+        }
+    ]
+
   };
 
   return (

@@ -1,10 +1,13 @@
 import React from 'react';
+import '../styles/Footer.scss';
 
 function Footer() {
   return (
-    <footer>
-          <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
-        </footer>
+
+    <footer className="footer-container">
+      <p>&copy; 2023 Eduardo Victor Batalha de Oliveira. Todos os direitos reservados.</p>
+    </footer>
+
   );
 }
 

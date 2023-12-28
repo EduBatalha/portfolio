@@ -9,18 +9,19 @@
   margin-bottom: 5vw;
 
   .slick-slider {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 28px;
+
     overflow: visible; 
   }
 
   .projeto-card {
     color: $cor-secundaria;
-    border-radius: 16px;
+    border-radius: 16px; 
 
 
     h3 {
       font-size: 3vw;
+      font-family: $fonte-secundaria;
     }
 
     p {
@@ -30,6 +31,7 @@
     a {
       color: $cor-secundaria;
       font-size: 2vw;
+      font-family: $fonte-secundaria;
 
       &:hover {
         text-decoration: underline;

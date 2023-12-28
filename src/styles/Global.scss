@@ -10,19 +10,23 @@
         background-color: $cor-terciaria;
         color: $cor-secundaria;
         text-align: left;
+        overflow-x: hidden;
+
     }
+    
+    
 
     h1 {
         color: $cor-secundaria;
         font-family: $fonte-primaria;
-        font-size: 8vw;
+        font-size: 6vw;
         white-space: nowrap;
       }
     
       h2 {
         color: $cor-secundaria;
         font-family: $fonte-secundaria;
-        font-size: 3vw;
+        font-size: clamp(14px, 3vw, 3vw);
         
       }
 
@@ -33,17 +37,25 @@
       
       p {
         color: white;
-        font-size: 1.5vw;
+        font-size: clamp(10px, 1.5vw, 1.5vw);
       }
 
       a {
         color: $cor-secundaria;
-        font-size: 2vw;
+        font-size: clamp(12px, 2.2vw, 2.2vw ) ;
       }
     
     .line{
         width: 100%;
         height: 1px;
+        margin-top: 5%;
+        margin-bottom: 5%;
         background-color: $cor-secundaria;
     }
       
+    @media screen and (max-width: 580px) {
+      .line{
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+    }    

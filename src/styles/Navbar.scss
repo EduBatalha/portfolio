@@ -23,7 +23,7 @@
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 16px;
+    font-size: clamp(8px, 1.8vw, 1.8vw);
   }
   
   a:hover {
