@@ -1,0 +1,14 @@
+/* styles/Footer.scss */
+@import 'variables';
+
+.footer-container {
+    
+    padding: 10px;
+    text-align: center;
+   
+    p{
+        color: $cor-secundaria;
+    }
+  }
+
+  

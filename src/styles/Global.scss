@@ -10,7 +10,11 @@
         background-color: $cor-terciaria;
         color: $cor-secundaria;
         text-align: left;
+        overflow-x: hidden;
+
     }
+    
+    
 
     h1 {
         color: $cor-secundaria;

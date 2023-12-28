@@ -1,0 +1,87 @@
+/* styles/Contact.scss */
+@import 'variables';
+
+#contato{
+    
+    .contatos-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contatos{
+        display: flex;
+        justify-content: center;
+        gap: clamp(20px, 5vw, 40px);
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+    }
+
+    
+    input, textarea{
+        width:28vw;
+        height: 3vw;
+        border-radius: 0.8vw;
+        border: solid 0.2vw $cor-secundaria;
+        background-color: $cor-terciaria;
+        color: white;
+        outline: none;
+        font-size: clamp(10px, 1.2vw, 1.2vw);
+        padding-left: 4%;
+        resize: none;
+    }
+
+    textarea{
+        height: 5vw;
+    }
+
+
+    ::placeholder {
+        color: $cor-secundaria;  }
+  
+
+    button{
+        width:29.5vw;
+        border-radius: 0.8vw;
+        border: solid 0.2vw $cor-secundaria;
+        background-color: $cor-terciaria;
+        color: white;
+        font-size: clamp(10px, 1.2vw, 1.2vw);
+    }
+
+    button:hover{
+        background-color: $cor-secundaria;
+        color: $cor-terciaria;
+        cursor: pointer;
+    }
+
+  
+    .icons{
+        display: flex;
+        gap: 2vw;
+        height: 3vw;
+        
+    }
+
+    a svg.bi-github {
+        fill: #F22987; 
+        width: 3vw;
+        height: 3vw;
+    }
+    
+    a svg.bi-linkedin {
+        fill: #F22987; 
+        width: 3vw;
+        height: 3vw;
+    }
+
+    a svg.bi-whatsapp {
+        fill: #F22987; 
+        width: 3vw;
+        height: 3vw;
+    }
+  
+}

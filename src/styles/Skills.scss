@@ -6,35 +6,37 @@
 
 
 #habilidades{
+    margin-left: 5%;
+    margin-right: 5%;
 
-  h2 {
-    text-align: left;
-  }
+    h2 {
+        text-align: left;
+    }
 
-  .img-skill {
-    width: 10vw; /* Ajusta o tamanho da imagem para ocupar toda a largura do contêiner */
-    height: auto;
-    min-width: 40px;
-  }
+    .img-skill {
+        width: 10vw; /* Ajusta o tamanho da imagem para ocupar toda a largura do contêiner */
+        height: auto;
+        min-width: 30px;
+    }
 
-  .skill{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    margin-top: 5.5%;
-  }
+    .skill{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-top: 5.5%;
+    }
 
-  img{
-    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Exemplo de uma função de temporização personalizada usando cubic-bezier */
-  }
-  
-  img:hover{
-    scale: 1.2;
+    img{
+        transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Exemplo de uma função de temporização personalizada usando cubic-bezier */
+    }
     
-  }
+    img:hover{
+        scale: 1.2;
+        
+    }
 }
 
 
