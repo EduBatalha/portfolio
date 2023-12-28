@@ -7,34 +7,36 @@
   text-align: left;
   margin-top: 5vw;
   margin-bottom: 5vw;
+  
 
-  .slick-slider {
-    margin: 0 30px;
+  .project-slide {
+    margin-right: 20px; /* Ajuste o valor conforme necessário */
+  }
+  
+  .slick-track {
+    display: flex;
+    gap: 0.85%;
   }
 
-  .slick-list {
-    display: block;
-    gap: 50%;
-  }
+
 
   .projeto-card {
     color: $cor-secundaria;
-    border-radius: 16px;
-    
+   
   
 
     h3 {
-      font-size: 3vw;
+      font-size: clamp(14px, 3vw, 3vw);
       font-family: $fonte-secundaria;
     }
 
     p {
-      font-size: 2vw;
+      font-size: clamp(10px, 2vw, 2vw);
     }
 
     a {
       color: $cor-secundaria;
-      font-size: 2vw;
+      font-size: clamp(12px, 2.5vw, 2.5vw);
       font-family: $fonte-secundaria;
 
       &:hover {

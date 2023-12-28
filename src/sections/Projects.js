@@ -33,46 +33,43 @@ function Projects() {
   ];
 
   const settings = {
+    autoplay: true,
+    autoplaySpeed: 3000,
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2.8,
+    slidesToShow: 2.6,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
- 
-
-    mobileFirst: true,
+    centerMode: true,
     responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            dots: true,
-            speed: 500,
-            slidesToShow: 2.8, 
-            slidesToScroll: 1,
-            centerMode: true,
-            
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            centerMode: true,
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1.4,
-            slidesToScroll: 1,
-            centerMode: true,
-          }
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 2.2,
+          slidesToScroll: 1,
+          
         }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          slidesToShow: 1.6,
+          slidesToScroll: 1,
+          
+        }
+      },
+      {
+        breakpoint: 375,
+        settings: {
+          arrows: false,
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+          
+        }
+      }
     ]
-
   };
 
   return (
