@@ -19,14 +19,14 @@
     h1 {
         color: $cor-secundaria;
         font-family: $fonte-primaria;
-        font-size: 6vw;
+        font-size: clamp(24px, 6vw, 6vw);
         white-space: nowrap;
       }
     
       h2 {
         color: $cor-secundaria;
         font-family: $fonte-secundaria;
-        font-size: clamp(14px, 3vw, 3vw);
+        font-size: clamp(20px, 3vw, 3vw);
         
       }
 
@@ -37,12 +37,12 @@
       
       p {
         color: white;
-        font-size: clamp(10px, 1.5vw, 1.5vw);
+        font-size: clamp(12px, 1.5vw, 1.5vw);
       }
 
       a {
         color: $cor-secundaria;
-        font-size: clamp(12px, 2.2vw, 2.2vw ) ;
+        font-size: clamp(16px, 2.2vw, 2.2vw ) ;
       }
     
     .line{

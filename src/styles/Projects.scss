@@ -9,15 +9,19 @@
   margin-bottom: 5vw;
 
   .slick-slider {
-    margin: 0 28px;
+    margin: 0 30px;
+  }
 
-    overflow: visible; 
+  .slick-list {
+    display: block;
+    gap: 50%;
   }
 
   .projeto-card {
     color: $cor-secundaria;
-    border-radius: 16px; 
-
+    border-radius: 16px;
+    
+  
 
     h3 {
       font-size: 3vw;
@@ -39,5 +43,4 @@
     }
   }
 
-  /* Adicione mais estilos conforme necessário */
 }

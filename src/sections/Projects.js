@@ -7,24 +7,24 @@ import '../styles/Projects.scss';
 function Projects() {
   const projectsData = [
     {
-      title: 'Nome do Projeto 1',
-      description: 'Descrição do projeto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      link: '#',
+      title: 'Buscador de CEP',
+      description: 'Aplicação mobile que consulta <br />a API ViaCEP, construída com padrão MVVM.',
+      link: 'https://github.com/EduBatalha/AdressInfoVerificator',
     },
     {
-      title: 'Nome do Projeto 2',
-      description: 'Descrição do projeto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      link: '#',
+      title: 'Página gestão de Estoque',
+      description: 'É uma página de gerenciamento de estoque que utiliza Java com framework Spring, juntamente com JSP.',
+      link: 'https://github.com/EduBatalha/ProductManagement',
     },
     {
-        title: 'Nome do Projeto 2',
-        description: 'Descrição do projeto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        link: '#',
+        title: 'API Rest Cadastro Produto',
+        description: 'É uma API no padrão REST construída em Java 8 sem auxilio de frameworks e bibliotecas de persistência.',
+        link: 'https://github.com/EduBatalha/Product-Management-API',
       },
       {
-        title: 'Nome do Projeto 2',
-        description: 'Descrição do projeto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        link: '#',
+        title: 'Este Portfólio :)',
+        description: 'Esse portfólio é uma aplicação React no padrão de arquitetura SPA, utilizei JavaScript, HTML e SCSS.',
+        link: 'https://github.com/EduBatalha/portfolio',
       },
       {
         title: 'Em andamento..',
@@ -36,12 +36,12 @@ function Projects() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2.8, // Defina o número de cartões a serem exibidos ao mesmo tempo
+    slidesToShow: 2.8,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    centerMode: true,
-    centerPadding: 10,
+ 
+
     mobileFirst: true,
     responsive: [
         {
@@ -82,8 +82,8 @@ function Projects() {
         {projectsData.map((project, index) => (
           <div key={index} className="projeto-card">
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            {project.link && <a href={project.link}>Link para o Projeto</a>}
+            <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
+            {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer">Link para o Projeto</a>}
           </div>
         ))}
       </Slider>

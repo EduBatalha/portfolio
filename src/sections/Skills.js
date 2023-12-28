@@ -80,10 +80,10 @@ function Skills() {
       <Slider {...carouselSettings}>
         {skillsData.map(skill => (
           <div className="skills">
-          <div key={skill.id} className="skill">
-            <img src={skill.icon} className="img-skill" alt={skill.name} />
-            <p>{skill.name}</p>
-          </div>
+            <div key={skill.id} className="skill">
+              <img src={skill.icon} className="img-skill" alt={skill.name} />
+              <p>{skill.name}</p>
+            </div>
           </div>
         ))}
       </Slider>
