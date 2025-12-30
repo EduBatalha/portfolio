@@ -249,6 +249,7 @@
         margin-top: 6%;
         width: 16.5vw;
         object-fit: contain;
+        border: solid 1px $cor-secundaria;
 
         @media screen and (max-width: 768px) {
             margin-top: 0;
