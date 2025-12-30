@@ -5,9 +5,28 @@
     margin-top: 10%;
     padding: 10px;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 8%;
+        padding: 8px;
+    }
+
+    @media screen and (max-width: 480px) {
+        margin-top: 6%;
+        padding: 6px;
+    }
     
     p{
         color: $cor-secundaria;
+        font-size: clamp(10px, 1.2vw, 1.2vw);
+
+        @media screen and (max-width: 768px) {
+            font-size: clamp(13px, 1.8vw, 1.8vw);
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: clamp(12px, 2vw, 2vw);
+        }
     }
   }
 

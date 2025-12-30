@@ -15,6 +15,22 @@
         /* Estilos para todos os elementos dentro de .header */
         margin: 1vw; /* Remover margens padrão */
     }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        > * {
+            margin: 1.5vw;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+        > * {
+            margin: 2vw;
+        }
+    }
   }
 
 
@@ -25,6 +41,16 @@
   .tela1{
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        align-items: center;
+    }
   }
 
   .grid {
@@ -37,6 +63,22 @@
     width: 40vw;
     height: 25vw;
 
+    @media screen and (max-width: 768px) {
+        width: 60vw;
+        height: 35vw;
+        margin-top: 5%;
+        margin-left: 0;
+        gap: 2%;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 80vw;
+        height: 50vw;
+        margin-top: 4%;
+        margin-left: 0;
+        gap: 3%;
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -47,6 +89,10 @@
     img:hover{
       scale: 1.1;
       box-shadow: 4px 4px 8px $cor-secundaria;
+
+      @media screen and (max-width: 480px) {
+        scale: 1.05;
+      }
     }
   }
   

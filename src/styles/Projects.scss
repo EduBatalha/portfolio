@@ -7,37 +7,105 @@
   text-align: left;
   margin-top: 5vw;
   margin-bottom: 5vw;
-  
+
+  @media screen and (max-width: 768px) {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
 
   .project-slide {
     margin-right: 20px; /* Ajuste o valor conforme necessário */
+
+    @media screen and (max-width: 480px) {
+      margin-right: 10px;
+    }
   }
   
   .slick-track {
     display: flex;
     gap: 0.85%;
+
+    @media screen and (max-width: 768px) {
+      gap: 1.5%;
+    }
+
+    @media screen and (max-width: 480px) {
+      gap: 2%;
+    }
   }
 
 
 
   .projeto-card {
     color: $cor-secundaria;
-   
-  
+    padding: 1vw;
+    margin: 0.5vw;
+
+    @media screen and (max-width: 768px) {
+      padding: 1.5vw;
+      margin: 1vw;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 2vw;
+      margin: 1.5vw;
+    }
 
     h3 {
       font-size: clamp(14px, 3vw, 3vw);
       font-family: $fonte-secundaria;
+      margin-bottom: 1vw;
+
+      @media screen and (max-width: 768px) {
+        font-size: clamp(20px, 4.5vw, 4.5vw);
+        margin-bottom: 1.5vw;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: clamp(18px, 5vw, 5vw);
+        margin-bottom: 2vw;
+      }
     }
 
     p {
       font-size: clamp(10px, 2vw, 2vw);
+      margin-bottom: 1vw;
+      line-height: 1.5;
+
+      @media screen and (max-width: 768px) {
+        font-size: clamp(16px, 2.8vw, 2.8vw);
+        margin-bottom: 1.5vw;
+        line-height: 1.6;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: clamp(15px, 3.2vw, 3.2vw);
+        margin-bottom: 2vw;
+        line-height: 1.5;
+      }
     }
 
     a {
       color: $cor-secundaria;
       font-size: clamp(12px, 2.5vw, 2.5vw);
       font-family: $fonte-secundaria;
+      display: inline-block;
+      margin-top: 0.5vw;
+
+      @media screen and (max-width: 768px) {
+        font-size: clamp(17px, 3.2vw, 3.2vw);
+        margin-top: 1vw;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: clamp(16px, 3.5vw, 3.5vw);
+        margin-top: 1.5vw;
+      }
 
       &:hover {
         text-decoration: underline;

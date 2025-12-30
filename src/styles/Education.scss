@@ -1,16 +1,32 @@
-/* styles/Experiences.scss */
+/* styles/Education.scss */
 @import 'variables';
 
 #educacao{
     a{
         color: $cor-secundaria;
-        font-size: clamp(12px, 2.2vw, 2.2vw ) ;
+        font-size: clamp(12px, 2.2vw, 2.2vw);
+
+        @media screen and (max-width: 768px) {
+            font-size: clamp(17px, 3vw, 3vw);
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: clamp(16px, 3.5vw, 3.5vw);
+        }
     }
 
     
     .instituicao{
         color: $cor-secundaria;
         font-size: clamp(10px, 1.8vw, 1.8vw);
+
+        @media screen and (max-width: 768px) {
+            font-size: clamp(15px, 2.5vw, 2.5vw);
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: clamp(14px, 2.8vw, 2.8vw);
+        }
     }
 
     p:not(.instituicao){
@@ -18,5 +34,19 @@
         padding: 1.5vw 2vw;
         line-height: 1.8;
         margin-bottom: 1.5vw;
+
+        @media screen and (max-width: 768px) {
+            font-size: clamp(15px, 2.2vw, 2.2vw);
+            padding: 2vw 2.5vw;
+            line-height: 1.8;
+            margin-bottom: 2vw;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: clamp(16px, 2.5vw, 2.5vw);
+            padding: 3vw 4vw;
+            line-height: 1.7;
+            margin-bottom: 3vw;
+        }
     }
 }   
