@@ -175,7 +175,7 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin: 0;
+    margin-top: -12vh;
     gap: 30px;
     position: relative;
     width: 100%;
@@ -187,6 +187,18 @@
 
     @media screen and (max-width: 320px) {
         gap: 20px;
+    }
+
+    @media screen and (min-height: 900px) {
+        margin-top: -8vh;
+    }
+
+    @media screen and (min-height: 1000px) {
+        margin-top: -12vh;
+    }
+
+    @media screen and (min-height: 1200px) {
+        margin-top: -18vh;
     }
 
     @media screen and (max-height: 600px) {
