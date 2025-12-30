@@ -7,7 +7,7 @@
   text-align: left;
   margin-top: 5vw;
   margin-bottom: 5vw;
-
+  
   @media screen and (max-width: 768px) {
     margin-top: 4vw;
     margin-bottom: 4vw;
@@ -105,12 +105,12 @@
     color: $cor-secundaria;
     padding: 1vw;
     margin: 0.5vw;
-
+   
     @media screen and (max-width: 768px) {
       padding: 1.5vw;
       margin: 1vw;
     }
-
+  
     @media screen and (max-width: 480px) {
       padding: 2vw;
       margin: 1.5vw;
