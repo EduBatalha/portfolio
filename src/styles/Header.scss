@@ -1,6 +1,22 @@
 /* styles/Header.scss */
 @import 'variables';
 
+#header {
+    padding-top: 0;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 2.5vw;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding-top: 3vw;
+    }
+
+    @media screen and (max-width: 320px) {
+        padding-top: 3.5vw;
+    }
+}
+
 #home {
     margin-top: 2%;
 
@@ -9,33 +25,57 @@
   .header{
     display: flex;
     flex-direction: column;
-    margin-top: 7vw;
+    margin-top: 9vw;
     margin-bottom: 7vw;
+    padding-top: 0;
     > * {
         /* Estilos para todos os elementos dentro de .header */
         margin: 1vw; /* Remover margens padrão */
     }
 
     @media screen and (max-width: 768px) {
-        margin-top: 5vw;
+        margin-top: 7vw;
         margin-bottom: 5vw;
+        padding-top: 2vw;
         > * {
             margin: 1.5vw;
         }
     }
 
     @media screen and (max-width: 480px) {
-        margin-top: 4vw;
+        margin-top: 6vw;
         margin-bottom: 4vw;
+        padding-top: 2vw;
         > * {
             margin: 2vw;
         }
+        align-items: center;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 320px) {
+        margin-top: 5vw;
+        margin-bottom: 3vw;
+        padding-top: 2vw;
+        > * {
+            margin: 2.5vw;
+        }
+        align-items: center;
+        text-align: center;
     }
   }
 
 
   header {
     text-align: left;
+
+    @media screen and (max-width: 480px) {
+        text-align: center;
+    }
+
+    @media screen and (max-width: 320px) {
+        text-align: center;
+    }
   }
 
   .tela1{

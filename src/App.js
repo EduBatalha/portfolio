@@ -20,13 +20,13 @@ function App() {
         <Header />
         <About />
         <div className='line'></div>
-        <Projects />
-        <div className='line'></div>
-        <Skills />
+        <Experience />
         <div className='line'></div>
         <Education />
         <div className='line'></div>
-        <Experience />
+        <Skills />
+        <div className='line'></div>
+        <Projects />
         <div className='line'></div>
         <Contact />
         <Footer />

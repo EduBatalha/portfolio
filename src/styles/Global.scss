@@ -51,10 +51,16 @@
 
         @media screen and (max-width: 768px) {
             font-size: clamp(24px, 4vw, 4vw);
+            text-align: center;
         }
 
         @media screen and (max-width: 480px) {
             font-size: clamp(22px, 4.5vw, 4.5vw);
+            text-align: center;
+        }
+
+        @media screen and (max-width: 320px) {
+            text-align: center;
         }
       }
 
@@ -113,6 +119,21 @@
             padding: 3vw 4vw;
             line-height: 1.6;
             margin-bottom: 3vw;
+        }
+    }
+
+    /* Seção Sobre - Padding superior no mobile */
+    #sobre {
+        @media screen and (max-width: 768px) {
+            padding-top: 3vw;
+        }
+
+        @media screen and (max-width: 480px) {
+            padding-top: 4vw;
+        }
+
+        @media screen and (max-width: 320px) {
+            padding-top: 5vw;
         }
     }
 

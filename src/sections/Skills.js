@@ -50,7 +50,7 @@ function Skills() {
     slidesToShow: 1.8,
     rows: 2,
     slidesPerRow: 2,
-    mobileFirst: true,
+    arrows: true, // Habilitar setas por padrão (desktop)
     responsive: [
       {
         breakpoint: 1024,
@@ -60,14 +60,16 @@ function Skills() {
           slidesToShow: 1.8, 
           slidesToScroll: 1,
           centerMode: true,
+          arrows: true, // Manter setas em telas grandes
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           centerMode: true,
+          arrows: false, // Desabilitar setas no mobile
         }
       },
       {
@@ -76,6 +78,7 @@ function Skills() {
           slidesToShow: 1.4,
           slidesToScroll: 1,
           centerMode: true,
+          arrows: false,
         }
       }
   ]

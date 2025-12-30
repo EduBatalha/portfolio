@@ -7,10 +7,12 @@
 
         @media screen and (max-width: 768px) {
             margin-bottom: 8%;
+            text-align: center;
         }
 
         @media screen and (max-width: 480px) {
             margin-bottom: 6%;
+            text-align: center;
         }
     }
 
@@ -47,11 +49,11 @@
         @media screen and (max-width: 768px) {
             flex-direction: column;
             align-items: center;
-            gap: clamp(15px, 4vw, 30px);
+            gap: clamp(30px, 6vw, 50px);
         }
 
         @media screen and (max-width: 480px) {
-            gap: clamp(10px, 3vw, 20px);
+            gap: clamp(25px, 5vw, 40px);
         }
     }
 
@@ -59,6 +61,10 @@
         display: flex;
         flex-direction: column;
         gap: 1vw;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 0;
+        }
     }
 
     
@@ -113,7 +119,7 @@
   
 
     button{
-        width:29.5vw;
+        width: 28vw;
         height: 3vw;
         border-radius: 0.8vw;
         border: solid 0.2vw $cor-secundaria;
@@ -148,27 +154,35 @@
 
   
     .icons{
-        display: flex;
+        display: flex !important;
         gap: 2vw;
         height: 3vw;
         align-items: center;
         justify-content: center;
+        visibility: visible !important;
+        opacity: 1 !important;
 
         @media screen and (max-width: 768px) {
             gap: 3vw;
             height: 4vw;
+            margin-bottom: 0;
+            display: flex !important;
         }
 
         @media screen and (max-width: 480px) {
             gap: 4vw;
             height: 5vw;
+            display: flex !important;
         }
     }
 
     a svg.bi-github {
-        fill: #F22987; 
+        fill: #F22987 !important; 
         width: 3vw;
         height: 3vw;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
 
         @media screen and (max-width: 768px) {
             width: 4vw;
@@ -186,9 +200,12 @@
     }
     
     a svg.bi-linkedin {
-        fill: #F22987; 
+        fill: #F22987 !important; 
         width: 3vw;
         height: 3vw;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
 
         @media screen and (max-width: 768px) {
             width: 4vw;
@@ -206,9 +223,12 @@
     }
 
     a svg.bi-whatsapp {
-        fill: #F22987; 
+        fill: #F22987 !important; 
         width: 3vw;
         height: 3vw;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
 
         @media screen and (max-width: 768px) {
             width: 4vw;
@@ -227,34 +247,54 @@
 
     img{
         margin-top: 6%;
-        width: 15vw;
+        width: 16.5vw;
         object-fit: contain;
 
         @media screen and (max-width: 768px) {
-            margin-top: 4%;
+            margin-top: 0;
             width: 20vw;
-            min-width: 100px;
+            min-width: 150px;
         }
 
         @media screen and (max-width: 480px) {
-            margin-top: 3%;
+            margin-top: 0;
             width: 25vw;
-            min-width: 80px;
+            min-width: 150px;
         }
     }
 
-    svg:hover{
+    img:hover{
         scale: 1.1;
-        filter: drop-shadow(1px 1px 4px $cor-primaria);
-    }
+        box-shadow: 0px 5px 10px $cor-secundaria;
+  
+        @media screen and (max-width: 480px) {
+          scale: 1.01;
+        }
+      }
     
     .direita-contatos {
+        display: block;
+
         @media screen and (max-width: 768px) {
-            display: flex;
+            display: flex !important;
             flex-direction: column;
             align-items: center;
             width: 100%;
+            gap: 30px;
+            visibility: visible !important;
         }
+
+        @media screen and (max-width: 480px) {
+            gap: 25px;
+            display: flex !important;
+        }
+    }
+
+    /* Ensure links are visible */
+    .icons a {
+        display: inline-block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }    
   
 }

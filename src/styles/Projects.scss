@@ -41,6 +41,66 @@
 
 
 
+  /* Custom styled arrows - Retro/Cyberpunk theme */
+  .slick-prev,
+  .slick-next {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background-color: $cor-terciaria;
+    border: 2px solid $cor-secundaria;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+    &::before {
+      color: $cor-secundaria;
+      font-size: 24px;
+      opacity: 1;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background-color: $cor-secundaria;
+      border-color: $cor-secundaria;
+      box-shadow: 0 0 15px rgba(242, 41, 135, 0.6);
+      transform: scale(1.1);
+
+      &::before {
+        color: $cor-terciaria;
+      }
+    }
+
+    &:focus {
+      background-color: $cor-secundaria;
+      border-color: $cor-secundaria;
+      box-shadow: 0 0 15px rgba(242, 41, 135, 0.6);
+
+      &::before {
+        color: $cor-terciaria;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none !important;
+    }
+  }
+
+  .slick-prev {
+    left: -60px;
+
+    &::before {
+      content: '←';
+    }
+  }
+
+  .slick-next {
+    right: -60px;
+
+    &::before {
+      content: '→';
+    }
+  }
+
   .projeto-card {
     color: $cor-secundaria;
     padding: 1vw;
@@ -91,24 +151,38 @@
     }
 
     a {
-      color: $cor-secundaria;
-      font-size: clamp(12px, 2.5vw, 2.5vw);
-      font-family: $fonte-secundaria;
-      display: inline-block;
-      margin-top: 0.5vw;
+      color: $cor-secundaria !important;
+      font-size: clamp(12px, 2.5vw, 2.5vw) !important;
+      font-family: $fonte-secundaria !important;
+      display: block !important;
+      margin: 0 !important;
+      margin-top: 0.5vw !important;
+      padding: 0 !important;
+      text-align: left !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      text-decoration: none !important;
 
       @media screen and (max-width: 768px) {
-        font-size: clamp(17px, 3.2vw, 3.2vw);
-        margin-top: 1vw;
+        font-size: clamp(17px, 3.2vw, 3.2vw) !important;
+        margin: 0 !important;
+        margin-top: 1vw !important;
+        padding: 0 !important;
+        text-align: left !important;
+        width: 100% !important;
       }
 
       @media screen and (max-width: 480px) {
-        font-size: clamp(16px, 3.5vw, 3.5vw);
-        margin-top: 1.5vw;
+        font-size: clamp(16px, 3.5vw, 3.5vw) !important;
+        margin: 0 !important;
+        margin-top: 1.5vw !important;
+        padding: 0 !important;
+        text-align: left !important;
+        width: 100% !important;
       }
 
       &:hover {
-        text-decoration: underline;
+        text-decoration: underline !important;
       }
     }
   }
