@@ -179,6 +179,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    box-sizing: border-box;
     transform: translateY(-20px);
     transition: transform 0.3s ease;
 
@@ -188,6 +189,18 @@
 
     @media screen and (max-width: 320px) {
         gap: 20px;
+    }
+
+    @media screen and (max-height: 600px) {
+        gap: 20px;
+    }
+
+    @media screen and (max-height: 500px) {
+        gap: 15px;
+    }
+
+    @media screen and (max-height: 400px) {
+        gap: 12px;
     }
 
     .mobile-menu-overlay.active & {
