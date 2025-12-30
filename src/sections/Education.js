@@ -1,19 +1,35 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations/translations';
 import '../styles/Education.scss';
 import '../styles/Global.scss';
 
 function Education() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
-    <section id="educacao">
-          <h2>Educação</h2>
-          <a>Tecnólogo em Análise e Desenvolvimento de Sistemas  2022-2023</a>
-          <p className='instituicao'>Universidade de Mogi das Cruzes</p>
-          <p>Fui bolsista integral na UMC, onde realizei projetos web, mobile e locais, fiz apresentações em equipe e aprendi sobre gestão e desenvolvimento de projetos.</p>
-     
-          <a><br></br>Técnico em Mecânica Industrial  2019-2021</a>
-          <p className='instituicao'>ETEC Presidente Vargas</p>
-          <p>Durante meu curso técnico em Mecânica Industrial, eu acabei me apaixonando por automação, o que acabou por levando me levar para a área de técnologia e programação.</p>
-        </section>
+    <section id="educacao" aria-label="Seção de educação">
+      <h2>{t.education.title}</h2>
+
+      <div>
+        <h3>{t.education.mba.title}</h3>
+        <p className='instituicao'>{t.education.mba.institution}</p>
+        <p>{t.education.mba.description}</p>
+      </div>
+
+      <div>
+        <h3>{t.education.degree.title}</h3>
+        <p className='instituicao'>{t.education.degree.institution}</p>
+        <p>{t.education.degree.description}</p>
+      </div>
+
+      <div>
+        <h3>{t.education.technical.title}</h3>
+        <p className='instituicao'>{t.education.technical.institution}</p>
+        <p>{t.education.technical.description}</p>
+      </div>
+    </section>
   );
 }
 

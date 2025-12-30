@@ -13,7 +13,10 @@
         font-size: clamp(10px, 1.8vw, 1.8vw);
     }
 
-    p{
+    p:not(.cargo){
         font-size: clamp(10px, 1.5vw, 1.5vw);
+        padding: 1.5vw 2vw;
+        line-height: 1.8;
+        margin-bottom: 1.5vw;
     }
 }   

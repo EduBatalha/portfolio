@@ -1,35 +1,38 @@
-// components/Projects.js
-
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations/translations';
 import Slider from 'react-slick';
 import '../styles/Projects.scss';
 
 function Projects() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   const projectsData = [
     {
-      title: 'Buscador de CEP',
-      description: 'Aplicação mobile que consulta <br />a API ViaCEP, construída com padrão MVVM.',
+      title: t.projects.cep.title,
+      description: t.projects.cep.description,
       link: 'https://github.com/EduBatalha/AdressInfoVerificator',
     },
     {
-      title: 'Página gestão de Estoque',
-      description: 'É uma página de gerenciamento de estoque que utiliza Java com framework Spring, juntamente com JSP.',
+      title: t.projects.stock.title,
+      description: t.projects.stock.description,
       link: 'https://github.com/EduBatalha/ProductManagement',
     },
     {
-        title: 'API Rest Cadastro Produto',
-        description: 'É uma API no padrão REST construída em Java 8 sem auxilio de frameworks e bibliotecas de persistência.',
-        link: 'https://github.com/EduBatalha/Product-Management-API',
-      },
-      {
-        title: 'Este Portfólio :)',
-        description: 'Esse portfólio é uma aplicação React no padrão de arquitetura SPA, utilizei JavaScript, HTML e SCSS.',
-        link: 'https://github.com/EduBatalha/portfolio',
-      },
-      {
-        title: 'Em andamento..',
-        description: 'Logo terei novos projetos para expor.',
-      },
+      title: t.projects.api.title,
+      description: t.projects.api.description,
+      link: 'https://github.com/EduBatalha/Product-Management-API',
+    },
+    {
+      title: t.projects.portfolio.title,
+      description: t.projects.portfolio.description,
+      link: 'https://github.com/EduBatalha/portfolio',
+    },
+    {
+      title: t.projects.coming.title,
+      description: t.projects.coming.description,
+    },
   ];
 
   const settings = {
@@ -74,13 +77,13 @@ function Projects() {
 
   return (
     <section id="projetos">
-      <h2>Projetos</h2>
+      <h2>{t.projects.title}</h2>
       <Slider {...settings}>
         {projectsData.map((project, index) => (
           <div key={index} className="projeto-card">
             <h3>{project.title}</h3>
             <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
-            {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer">Link para o Projeto</a>}
+            {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer">{t.projects.link}</a>}
           </div>
         ))}
       </Slider>

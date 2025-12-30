@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations/translations';
 import emailjs from "emailjs-com";
 import "../styles/Contact.scss";
 import "../styles/Global.scss";
 
 function ContactForm() {
+  const { language } = useLanguage();
+  const t = translations[language];
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -17,7 +21,7 @@ function ContactForm() {
     const userId = "nqMsg5qFCVWw3N64W";
 
     if (!name || !email || !message) {
-      setFeedback("Por favor, preencha todos os campos do formulário.");
+      setFeedback(t.contact.validation);
       return;
     }
 
@@ -32,30 +36,30 @@ function ContactForm() {
       .send(serviceId, templateId, templateParams, userId)
       .then((response) => {
         console.log("E-mail enviado com sucesso!", response);
-        setFeedback("E-mail enviado com sucesso!");
+        setFeedback(t.contact.success);
         setName("");
         setEmail("");
         setMessage("");
       })
       .catch((error) => {
         console.error("Erro ao enviar e-mail:", error);
-        setFeedback("Erro ao enviar e-mail. Por favor, tente novamente.");
+        setFeedback(t.contact.error);
       });
   };
 
   return (
     <section id="contato">
-      <h2>Entre em contato</h2>
+      <h2>{t.contact.title}</h2>
       <div className="contatos">
         <form onSubmit={handleSubmit}>
-          <p>Me envie um email:</p>
+          <p>{t.contact.subtitle}</p>
           {feedback && <div style={{ color: "#F22987" }}>{feedback}</div>}
           <label>
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Nome"
+              placeholder={t.contact.namePlaceholder}
             />
           </label>
           <label>
@@ -63,17 +67,17 @@ function ContactForm() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="E-mail"
+              placeholder={t.contact.emailPlaceholder}
             />
           </label>
           <label>
             <textarea
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Mensagem"
+              placeholder={t.contact.messagePlaceholder}
             />
           </label>
-          <button type="submit">Enviar e-mail</button>
+          <button type="submit">{t.contact.submitButton}</button>
         </form>
 
         <div className="direita-contatos">
