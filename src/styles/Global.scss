@@ -125,15 +125,15 @@
     /* Seção Sobre - Padding superior no mobile */
     #sobre {
         @media screen and (max-width: 768px) {
-            padding-top: 10vw;
+            padding-top: 3vw;
         }
 
         @media screen and (max-width: 480px) {
-            padding-top: 15vw;
+            padding-top: 4vw;
         }
 
         @media screen and (max-width: 320px) {
-            padding-top: 15vw;
+            padding-top: 5vw;
         }
     }
 
